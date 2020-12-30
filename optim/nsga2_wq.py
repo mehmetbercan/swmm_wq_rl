@@ -29,7 +29,7 @@ def Run_SWMM_Model(para_vals, para_swmm, path_swmm):
     # update SWMM input file
     for par, val in para_vals.items():
         ln, col, lenght = para_swmm[par]
-        SWMM_utilsUpdateTextFile(path_swmm, val, ln, col, lenght)
+        SWMM_utils.UpdateTextFile(path_swmm, val, ln, col, lenght)
         
     # run SWMM model
         
